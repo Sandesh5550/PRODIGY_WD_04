@@ -1,0 +1,83 @@
+body {
+  scroll-behavior: smooth;
+  animation: gradientBG 18s ease infinite;
+  background: linear-gradient(-45deg, #f0f4ff, #fbeaff, #f0fff4, #ffe7e7);
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section separation with soft containers */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image */
+img {
+  object-fit: cover;
+  border-radius: 9999px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Design */
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-outline:hover {
+  background-color: #e0f2fe;
+  color: #1d4ed8;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: 500;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
